@@ -16,7 +16,7 @@ toDo iOS Application
 
 ## Results 
 
-![App Screenshot](https://github.com/kiananvari/LSTM-price-prediction/raw/main/Result.png)
+![App Screenshot](https://github.com/kiananvari/toDoList_ios_application/raw/main/UI%20elements/FirstPage.png)
 
 
 ## Contributing
