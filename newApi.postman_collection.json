@@ -1,0 +1,377 @@
+{
+	"info": {
+		"_postman_id": "f0335be4-4479-4c88-9fae-f7053e1bafbc",
+		"name": "newAliApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createGroup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNzYwYWM4ZWQtMzhkMy00ZjUzLWE3YjItOWFkOWIzYmRhNjRhIiwiaWF0IjoxNTM5MjUwNTg2fQ.exeb-WXsM06aWMtInkQcaoK7hKJ9NGrUpQUsHkKBdIk",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"groupName\":\"salam\"\n\n}\n"
+				},
+				"url": {
+					"raw": "http://buzztaab.com:8081/api/createGroup/",
+					"protocol": "http",
+					"host": [
+						"buzztaab",
+						"com"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"createGroup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"first_name\" : \"ali\",\n\"last_name\" : \"ali\",\n\"password\" : \"ali\",\n\"email\" : \"ali@dfsf.com\"\n}\n"
+				},
+				"url": {
+					"raw": "http://buzztaab.com:8081/api/register",
+					"protocol": "http",
+					"host": [
+						"buzztaab",
+						"com"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTask",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNzYwYWM4ZWQtMzhkMy00ZjUzLWE3YjItOWFkOWIzYmRhNjRhIiwiaWF0IjoxNTM5MjUwNTg2fQ.exeb-WXsM06aWMtInkQcaoK7hKJ9NGrUpQUsHkKBdIk",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"task_id\": \"15\"\n}"
+				},
+				"url": {
+					"raw": "http://buzztaab.com:8081/api/deleteTask/",
+					"protocol": "http",
+					"host": [
+						"buzztaab",
+						"com"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"deleteTask",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTask",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNzYwYWM4ZWQtMzhkMy00ZjUzLWE3YjItOWFkOWIzYmRhNjRhIiwiaWF0IjoxNTM5MjUwNTg2fQ.exeb-WXsM06aWMtInkQcaoK7hKJ9NGrUpQUsHkKBdIk",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"group_id\": \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://buzztaab.com:8081/api/getTask/",
+					"protocol": "http",
+					"host": [
+						"buzztaab",
+						"com"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"getTask",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteGroup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNzYwYWM4ZWQtMzhkMy00ZjUzLWE3YjItOWFkOWIzYmRhNjRhIiwiaWF0IjoxNTM5MjUwNTg2fQ.exeb-WXsM06aWMtInkQcaoK7hKJ9NGrUpQUsHkKBdIk",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"group_id\": \"15\"\n}"
+				},
+				"url": {
+					"raw": "http://buzztaab.com:8081/api/deleteGroup/",
+					"protocol": "http",
+					"host": [
+						"buzztaab",
+						"com"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"deleteGroup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getGroup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNzYwYWM4ZWQtMzhkMy00ZjUzLWE3YjItOWFkOWIzYmRhNjRhIiwiaWF0IjoxNTM5MjUwNTg2fQ.exeb-WXsM06aWMtInkQcaoK7hKJ9NGrUpQUsHkKBdIk",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"group_id\": \"15\"\n}"
+				},
+				"url": {
+					"raw": "http://buzztaab.com:8081/api/getGroup/",
+					"protocol": "http",
+					"host": [
+						"buzztaab",
+						"com"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"getGroup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateGroup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNzYwYWM4ZWQtMzhkMy00ZjUzLWE3YjItOWFkOWIzYmRhNjRhIiwiaWF0IjoxNTM5MjUwNTg2fQ.exeb-WXsM06aWMtInkQcaoK7hKJ9NGrUpQUsHkKBdIk",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"groupName\":\"sdfdsf\"\n, \"group_id\":50\n}\n"
+				},
+				"url": {
+					"raw": "http://buzztaab.com:8081/api/updateGroup/",
+					"protocol": "http",
+					"host": [
+						"buzztaab",
+						"com"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"updateGroup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createTask",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNzYwYWM4ZWQtMzhkMy00ZjUzLWE3YjItOWFkOWIzYmRhNjRhIiwiaWF0IjoxNTM5MjUwNTg2fQ.exeb-WXsM06aWMtInkQcaoK7hKJ9NGrUpQUsHkKBdIk",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"group_id\":1 ,\n\"taskName\":\"sfds\",\n\"taskDescription\":\"sf\",\n\"executionTime\" : \"fd\"\n}\n"
+				},
+				"url": {
+					"raw": "http://buzztaab.com:8081/api/createTask/",
+					"protocol": "http",
+					"host": [
+						"buzztaab",
+						"com"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"createTask",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTask",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiNzYwYWM4ZWQtMzhkMy00ZjUzLWE3YjItOWFkOWIzYmRhNjRhIiwiaWF0IjoxNTM5MjUwNTg2fQ.exeb-WXsM06aWMtInkQcaoK7hKJ9NGrUpQUsHkKBdIk",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"task_id\":1,\n\"groupId\":3,\n\"group_id\":1 ,\n\"taskName\":\"sfds\",\n\"taskDescription\":\"sf\",\n\"executionTime\" : \"fdss\"\n}\n"
+				},
+				"url": {
+					"raw": "http://buzztaab.com:8081/api/updateTask/",
+					"protocol": "http",
+					"host": [
+						"buzztaab",
+						"com"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"updateTask",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\" : \"sad@sd.com\" ,\n\"password\" : \"123\"\n}"
+				},
+				"url": {
+					"raw": "http://buzztaab.com:8081/api/login",
+					"protocol": "http",
+					"host": [
+						"buzztaab",
+						"com"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
