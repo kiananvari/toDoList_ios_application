@@ -14,7 +14,7 @@ toDo iOS Application
 - Set a group of tasks
 - Tasks on a map
 
-## Results 
+## Screenshot  
 
 ![App Screenshot](https://github.com/kiananvari/toDoList_ios_application/raw/main/UI%20elements/FirstPage.png)
 
